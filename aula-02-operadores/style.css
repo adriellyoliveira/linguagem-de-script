@@ -1,0 +1,15 @@
+form {
+    padding: 20px;
+    background-color: rgb(205, 184, 224);
+}
+
+input {
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    border: 1px solid rgb(231, 58, 231);
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+}
