@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação do Array</title>
+    <script>
+        let frutas = ["maça", "pera", "uva"];
+
+
+        // alterando o conteudo de um indice
+        frutas[1] = "kiwi";
+        console.log(frutas);
+        console.log("alterando o conteudo de um indice");
+        console.log(frutas[0]);
+        console.log(frutas[1]);
+        console.log(frutas[2]);
+
+
+        //adicionando novos indices ao final do array
+        frutas.push("Banana");
+        console.log("adicionando novos indices ao final do array");
+        console.log(frutas);
+
+
+        //removendo indice do final do array
+        frutas.pop()
+        console.log("removendo indice do final do array");
+        console.log(frutas);
+
+
+        // adicionando indice no inicio do array
+        frutas.unshift("Laranja")
+        console.log("adicionando indice no inicio do array");
+        console.log(frutas);
+
+
+        //removendo indice do inicio do array
+        frutas.shift()
+        console.log("removendo indice do inicio do array");
+        console.log(frutas);
+
+        //procurando valores no array
+        console.log("procurando valores kiwi no array");
+        console.log(frutas.includes("kiwi"));
+
+        //retornando a posição no array
+        console.log("retornando a posição Kiwi no array");
+        console.log(frutas.indexOf("kiwi"));
+
+        //manipulando vetores
+        console.log("removendo conteudo do array");
+        frutas.splice(0,1) //removendo conteudo do array a partir do indice 0 (0 indica a partir de qual indice vamos deleter). 1 (indica quantos indices - valores - vamos alterar)
+        console.log(frutas);
+
+        // frutas é um array com 15 posições, para apagar a partir do indice 7 até o final faremos da seguinte forma:
+        //frutas.splice(7, frutas.length -1)
+
+
+        //adicionando elementos a partir de um indice
+        frutas.splice(1,2, "manga")
+        console.log(frutas);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
