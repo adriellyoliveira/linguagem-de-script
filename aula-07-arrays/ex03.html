@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let notas = [4, 7, 8, 5, 9, 10, 6];
+        console.log(notas);
+        
+        let aprovados = notas.filter(nota => nota >= 7);
+        console.log(aprovados);
+
+        let atualizado = aprovados.map(nota => nota < 10 ? nota + 1: nota)
+        console.log(atualizado);
+
+        /* let atualizado = aprovados.map(nota => {
+            if (nota > 10) {
+                return -1
+            } else {
+                return nota
+            }
+        })
+        console.log(atualizado); */
+    </script>
+    <title>Exercicio 03 - Filtrando E Transformando Notas</title>
+</head>
+<body>
+    
+</body>
+</html>

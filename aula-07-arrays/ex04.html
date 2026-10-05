@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let precos = [50, 120,80, 200, 30, 150];
+        console.log(`1. Lista de Produtos: ${precos}`);
+        
+        
+        let maior = precos.filter(preco => preco >= 100);
+        console.log(`2. filter(): Produtos selecionados: ${maior}`);
+
+        //map() aplica 10% de desconto (multiplica por 0.10)
+        let desconto = maior.map(preco => preco - (0.10 * preco));
+
+        //forEach(exibi cada preço com desconto)
+        let precoDesc = desconto.forEach(desconto => {
+            console.log(`4. forEach(): Preço com desconto R$ ${desconto.toFixed(2)}`)
+        });
+
+        //exibe a quantidade de produtos selecionados
+        console.log("Quantidade de produtos:" + desconto.length);
+        
+    </script>
+    <title>Exercicio 04 - Analisando Produtos</title>
+</head>
+<body>
+    
+</body>
+</html>
