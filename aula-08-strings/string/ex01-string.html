@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando um Nome</title>
+    <script>
+        let nome = "  Antonio José da Silva  "
+
+    
+        console.log(nome);
+        // imprime o tamanho da string, quantidade de caracteres
+        console.log(nome.length);
+        nome = nome.trim() // removendo todos os espaços em branco do inicio e fim da string
+        console.log(nome.toLocaleUpperCase());
+        console.log(nome.length);
+        //convertendo a string para caracteres maiusculos
+        console.log(nome);
+
+        //removendo os espaços em branco
+        nome = nome.replaceAll(" ", "");
+        console.log(nome);
+        console.log(nome.length);
+
+        let texto = "Um texto qualquer para inserir aqui"
+        palavras = texto.split(" ").length
+        console.log("A quantidade de palavras na string  " + texto + " é de: " + palavras + " palavras");
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

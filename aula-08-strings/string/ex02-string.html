@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando E-mail</title>
+    <script>
+        let email = "  USUARIO@EXEMPLO.COM  "
+
+        console.log(email);
+
+        //a) removendo esáços do inicio e do final da string
+        email = email.trim();
+        console.log(email);
+        
+        //b) converter caracteres para minusculo
+        console.log(email.toLocaleLowerCase());
+        console.log(email);
+
+        //c) verifica se a string contém o @
+        console.log(email.includes("@"));
+
+        //d) verifica se a string termina com .com
+        console.log(email.endsWith(".com"));
+
+        //e) extraindo e exibindo o dominio
+        dominio = email.split("@")
+        console.log(dominio[1]);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
