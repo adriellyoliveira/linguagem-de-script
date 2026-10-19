@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <script>
+        let texto = "Estou estudando JavaScript";
+
+        console.log(texto.toLocaleUpperCase());// ESTOU ESTUDANDO JAVASCRIPT
+        console.log(texto.toLocaleLowerCase());//estou estudando javascript
+        console.log(texto);//Estou estudando JavaScript
+        
+        console.log(texto.includes("JavaScript")); //true
+        console.log(texto.indexOf("Script")); //20
+        console.log(texto.lastIndexOf("a")); //19
+        console.log(texto.startsWith("estudando")); //false
+        console.log(texto.endsWith("JavaScript")); //true
+
+        console.log(texto.slice(2, 12));// tou estuda
+        console.log(texto.slice(-10));// JavaScript
+        console.log(texto.substring(0, 15));// Estou estudando
+
+        arquivo = "meuArquivo.pdf"
+
+        if (arquivo.endsWith("pdf")) {
+            alert("Arquivo válido")
+        } else {
+            alert("Selecione outro arquivo")
+        };
+
+        nome = "Ana,Pedro-Antonia"
+        lista = nome.split("-")
+        console.log(lista);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
