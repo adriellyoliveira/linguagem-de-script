@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.destaque {
+    color: white;
+    background-color: #ff00ea;
+    padding: 8px 12px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #843ea5;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #6c2d79;
+}
