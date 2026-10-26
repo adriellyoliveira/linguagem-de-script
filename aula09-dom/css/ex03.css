@@ -28,3 +28,7 @@ button {
 button:hover {
     background-color: #6c2d79;
 }
+
+img {
+    width: 250px;
+}
