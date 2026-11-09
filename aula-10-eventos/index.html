@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        :root {
+            --button-color: #ab97f7;
+            --button-color-hover: #836bd8;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #35385c;
+            color: white;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: var(--button-color);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .btn:hover {
+            background-color: var(--button-color-hover);
+        }
+
+        input {
+            background-color: var(--button-color);
+            padding: 8px;
+            border-radius: 8px;
+            border: 2px solid var(--button-color-hover);
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn" onclick="exibirMsg()" id="btn">Clique aqui! 1</button>
+    <button class="btn" onclick="exibirMsg()" id="btn2">Clique aqui! 2</button>
+    <button class="btn" onclick="exibirMsg()" id="btn3">Clique aqui! 3</button>
+
+    <br>
+
+    <h1>Cadastro</h1>
+
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        <div id="errorNome"></div>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email">
+        <div id="errorEmail"></div>
+        <br>
+        <button class="btn" type="submit" id="btnGravar">Gravar</button>
+    </form>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
